@@ -1,28 +1,22 @@
-import org.graalvm.compiler.nodes.memory.FloatingReadNode;
+import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
     //objects are created from classes
+    Scanner scan = new Scanner(System.in);
 
-    sum(2,3);
-
-      Park k = new Park(10,5);
-
-      System.out.println(k.locationOf());
+    System.out.println("Welcome to our show reccomendation program! What time are you home to watch tv?");
+    String name = scan.next();
     
-    Tampa t = new Tampa(5,5);
-
-    System.out.println(t.cityOf());
-
-    Florida f = new Florida(20,4);
-
-    System.out.println(f.stateOf());
-
+    sum(2,3);
+   
   }
 
   static int sum(int num1, int num2)
   {
     return num1 + num2;
   }
+
+
 
 }
